@@ -1,6 +1,9 @@
 # Compiled class file
 *.class
 
+/ButtonPanel-addon/.settings/
+/ButtonPanel-demo/.settings/
+
 /ButtonPanel-addon/target/
 /ButtonPanel-demo/target/
 
