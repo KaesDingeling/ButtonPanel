@@ -1,0 +1,79 @@
+@mixin bPMaterial {
+	.buttonPanel {
+		padding-top: 0 !important;
+	  		
+		& > .v-panel-captionwrap {
+			margin-top: 0 !important;
+			
+			.v-panel-caption {
+				position: relative;
+				padding: 0 0 0 10px;
+				height: 45px;
+				
+				span:not(.v-icon) {
+					position: absolute;
+				}
+			}
+		}
+		
+		& > .v-panel-content-buttonPanel {
+			height: calc(100% - 45px) !important;
+			overflow: unset;
+			
+			& > .v-verticallayout {
+				background: $mat-card-color !important;
+				overflow: auto;
+				
+				& > .v-expand {
+					padding-top: 0 !important;
+					
+					& > .v-slot-bPButtons {
+						margin-top: 0 !important;
+					}
+					
+					& > .v-slot-bPContent {
+						height: 100% !important;
+					}
+				}
+				
+				& > .v-formlayout-light {
+					padding: 5px 10px 5px 5px !important;
+				}
+				
+				& .v-grid {
+					.v-grid-scroller {
+						&.v-grid-scroller-vertical {
+							height: calc(100% - 54px) !important;
+						}
+						
+						&.v-grid-scroller-horizontal {
+							display: none !important;
+						}
+					}
+					
+					.v-grid-tablewrapper {
+						height: 100% !important;
+					}
+				}
+			}
+		}
+		
+		.v-slot-bPButtons {
+			height: 0 !important;
+		}
+		
+		.bPButtons {
+			position: absolute;
+			top: -45px;
+			right: 0;
+			
+			.v-button {
+				border-radius: 0;
+			}
+			
+			.v-slot:last-child .v-button {
+				border-top-right-radius: 2px;
+			}
+		}
+	}
+}

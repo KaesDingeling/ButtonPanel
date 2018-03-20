@@ -1,0 +1,14 @@
+$mat-background-color: #fafafa;
+$v-focus-color: #00BCD4;
+
+@import "../material/material.scss"; 
+//@import "../valo/valo.scss";
+
+@import "../../../../../../../ButtonPanel-addon/src/main/webapp/VAADIN/addons/buttonpanel/style.scss";
+
+.demo {
+	@include material;
+	@include bPMaterial;
+	
+	//@include valo;
+}
