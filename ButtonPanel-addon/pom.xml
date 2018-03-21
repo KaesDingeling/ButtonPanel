@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>de.kaesdingeling.button.panel</groupId>
+	<groupId>org.vaadin.addons</groupId>
 	<artifactId>ButtonPanel</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>ButtonPanel</name>
 
 	<prerequisites>
@@ -28,24 +28,22 @@
 		<Vaadin-Addon>${project.artifactId}-${project.version}.jar</Vaadin-Addon>
 	</properties>
 
-    <!--
 	<organization>
 		<name>My Name</name>
-		<url>https://github.com/mygithubaccount/ButtonPanel/</url>
+		<url>https://github.com/KaesDingeling/ButtonPanel/</url>
 	</organization>
 
 	<scm>
-		<url>git://github.com/mygithubaccount/ButtonPanel.git</url>
-		<connection>scm:git:git://github.com/mygithubaccount/ButtonPanel.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:/mygithubaccount/${componentClassName}.git</developerConnection>
+		<url>git://github.com/KaesDingeling/ButtonPanel.git</url>
+		<connection>scm:git:git://github.com/KaesDingeling/ButtonPanel.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:/KaesDingeling/${componentClassName}.git</developerConnection>
 		<tag>ButtonPanel add-on for Vaadin</tag>
 	</scm>
 
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/mygithubaccount/ButtonPanel/issues</url>
+		<url>https://github.com/KaesDingeling/ButtonPanel/issues</url>
 	</issueManagement>
-    -->
 
 	<licenses>
 		<license>
@@ -93,7 +91,7 @@
 							<!-- Package format version - do not change -->
 							<Vaadin-Package-Version>1</Vaadin-Package-Version>
 							<Vaadin-License-Title>${Vaadin-License-Title}</Vaadin-License-Title>
-							<Vaadin-Stylesheets>VAADIN/addons/buttonpanel/style.scss</Vaadin-Stylesheets>
+							<Vaadin-Stylesheets>VAADIN/addons/buttonpanel/bpmaterial.scss</Vaadin-Stylesheets>
 						</manifestEntries>
 					</archive>
 				</configuration>
@@ -158,13 +156,7 @@
 			included in the produced JARs -->
 		<resources>
 			<resource>
-				<directory>src/main/java</directory>
-				<excludes>
-                    <exclude>rebel.xml</exclude>
-                </excludes>
-			</resource>
-			<resource>
-				<directory>src/main/resources</directory>
+				<directory>src/main/webapp</directory>
 			</resource>
 		</resources>
 

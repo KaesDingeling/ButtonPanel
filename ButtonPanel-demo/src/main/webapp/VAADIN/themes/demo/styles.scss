@@ -4,11 +4,11 @@ $v-focus-color: #00BCD4;
 @import "../material/material.scss"; 
 //@import "../valo/valo.scss";
 
-@import "../../../../../../../ButtonPanel-addon/src/main/webapp/VAADIN/addons/buttonpanel/style.scss";
+@import "../../../../../../../ButtonPanel-addon/src/main/webapp/VAADIN/addons/buttonpanel/bpmaterial.scss";
 
 .demo {
 	@include material;
-	@include bPMaterial;
+	@include bpmaterial;
 	
 	//@include valo;
 }
