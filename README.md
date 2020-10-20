@@ -1,6 +1,10 @@
 # ButtonPanel Add-on for Vaadin 8
 
-${ComponentClassName} is a UI component add-on for Vaadin 8.
+Project was moved to GitLab https://gitlab.com/KaesDingeling/ButtonPanel
+
+
+
+ButtonPanel is a UI component add-on for Vaadin 8.
 
 ## Online demo
 
